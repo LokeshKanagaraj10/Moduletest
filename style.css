@@ -1,0 +1,143 @@
+.header_wrapper{
+    background-color: #000000;
+}
+.navbar{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #000000;
+    color: white;
+    position: fixed;
+    z-index: 1;
+}
+.nav-item:hover{
+    border: 5px solid white;
+    border-radius: 10px;
+
+}
+.caption{
+    padding: 30px;
+    color: white;
+    font-size: 100px;
+    font-family:"Inter";  
+    animation-name: cap;  
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes cap {
+    25%{
+        opacity: 25%;
+    }    
+    50%{
+        opacity: 25%;
+    }
+    75%{
+        opacity: 75%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+.image{
+    max-width: 100%;
+    margin-top: 100px;
+    padding-left: -200 px;
+}
+
+.arrow{
+    width: 30px;
+    height: 20px;
+}
+.aboutcontainer{
+    background-color: white;
+}
+.aboutpic{
+    margin-top: 100px;
+    margin-left: 50px;
+    height: 726px;
+    width: 572px;
+    left: 89px;
+    top: 1353px;
+    border-radius: 0px;
+
+}
+
+
+.aboutpara, h3{
+margin-top: 100px;
+margin-left: 20px;
+padding-left: 50px;
+width: 912px;
+height: 225px;
+left: 747px;
+margin-bottom: 0;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 80px;
+
+color: #000000;
+
+
+}
+.aboutpara, p{
+margin-left: 20px;
+padding-left: 50px;
+margin-bottom: 20px;
+width: 912px;
+height: 546px;
+left: 747px;
+margin-top: 10px;
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 29px;
+
+color: #000000;
+    
+}
+.scrolling-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 10px;
+    gap: 50px;
+    overflow-x: auto;
+}
+
+
+.card{
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    top: 0%;
+}
+.card:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.footerheading{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: transparent;
+}
+
+footer{
+    margin-top: 100px;
+}
+.contact{
+    border-radius: 20px;
+}
+.contact ::placeholder{
+    color: white;
+}
+.contact ,input{
+    padding: 30px;
+}
