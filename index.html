@@ -10,37 +10,23 @@
 </head>
 <body>    
   <header class="header_wrapper">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-      <a class="navbar-brand justify-content-start" href="#">Business Name</a>
-        <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#aboutus">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#ourservice">Our Services</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contactus">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <nav class="nav_wrapper">
+      <div class="companylogo">Business Name</div>
+      <div class="items">
+        <div class="item"><a href="#">Home</a></div>
+        <div class="item"><a href="#aboutus">About Us</a></div>
+        <div class="item"><a href="#ourservice">Our Service</a></div>
+        <div class="item"><a href="#contactus">Contact Us</a></div>
+      </div>
+    </nav>
     </header>
     <main>
-      <div class="container-fluid bg-black">
-        <div class="row r1">
-          <div class="col-md-6 col-sm-12">
-            <h1 class="caption">BUSINESS<br>LANDING<br>PAGE</h1>
+      <div class="container-caption">
+        <div class="row1">
+          <div class="caption">
+            <h1>BUSINESS<br>LANDING<br>PAGE</h1>
           </div>
-          <div class="col-md-6 col-sm-12 image">
+          <div class="image">
             <img class="img-fluid" src="./images/pngegg 1.png" alt="laptoppic">
           </div>
         </div>
@@ -49,18 +35,14 @@
        </a>
        
     </div>
-      <div class="aboutcontainer" id="aboutus">
-        <div class="row justify-content-start">
-          <div class="col-md-4 col-sm-12  aboutpic">
-            <img src="./images/aboutus.jpeg" alt="pic">
-          </div>
-        </div>
-          <div class="col-md-8 col-sm-12 aboutpara">
-            <h3>ABOUT US</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio debitis autem hic quo ipsum exercitationem esse repellendus. Ea, accusantium dolorum. Sunt, mollitia voluptates. Nam laboriosam repellat unde facilis. Necessitatibus, dignissimos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eligendi accusamus voluptates suscipit harum repellendus, esse optio autem excepturi tempora provident ea soluta beatae eaque amet voluptatibus atque ex ullam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, repellat illum blanditiis facilis illo libero! Dicta ratione ipsum corporis, eveniet minus sunt vero, a, et quam possimus non consequatur dolores.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis est cupiditate adipisci aut error corporis, facere voluptatem dolorem debitis facilis cumque sunt dolor possimus eius labore molestiae provident aperiam optio.</p>
-          </div>
-        </div>
+    <div class="aboutcontainer">
+      <div class="aboutpic"><img src="./images/aboutus.jpeg" alt="aboutpicture"></div>
+      <div class="aboutpara">
+        <div class="heading"><h1>ABOUT US</h1></div>
+        <div class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima ducimus id, eos nam ratione itaque iste, fugiat vel consequuntur optio incidunt sunt nobis ipsum totam sapiente! Beatae ad unde consectetur eius, suscipit, reprehenderit voluptate possimus doloremque atque veritatis repellendus. Dolorem sit sunt numquam veniam, recusandae alias neque, voluptatem sequi laudantium aspernatur asperiores exercitationem, laboriosam tenetur quis cumque? Voluptates eveniet neque nihil minus laboriosam quisquam. Exercitationem nostrum veritatis, excepturi id, dolorum mollitia ut repellendus provident vel doloribus alias beatae animi qui corrupti soluta numquam necessitatibus ea, facere molestias temporibus. Molestiae praesentium illum, soluta a consectetur facere voluptatem est dicta quo beatae?</div>
       </div>
+    </div>
+      
       <div class=service id="ourservice">
         <h1 class="ourservice" id="ourservice">OUR SERVICES</h1>
           <div class="container-fluid">
@@ -98,7 +80,7 @@
     </main>
     <footer>
       <form id="contactus" action="mailto:lokeshk07kanagaraj@gmail.com" method="post">
-        <div class="container-fluid w-50">
+        <div class="container-fluid w-100">
           <div class="row center bg-black contact">
             
              <h1 class="text-light d-flex justify-content-center" style="padding: 20px;">CONTACT US</h1>

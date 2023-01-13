@@ -1,21 +1,113 @@
-.header_wrapper{
-    background-color: #000000;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.navbar{
-    width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: #000000;
-    color: white;
-    position: fixed;
+.header_wrapper{ 
+    position: sticky;
+    top: 0;
     z-index: 1;
 }
-.nav-item:hover{
-    border: 5px solid white;
-    border-radius: 10px;
+.nav_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: black;
+    color: white;
+}
+.items{
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+
+.item a{
+    text-decoration: none;
+    color: white;
+}
+.item a:hover{
+ color: black;
+ background-color: white;
+ border-radius: 10%;
+}
+a:active{
+    color: black;
+    background-color: white;
+    border-radius: 10%;
+}
+ 
+@media screen and (max-width:480px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .header_wrapper{
+        width: 100%;
+        position:sticky;
+        top: 0px;
+    }
+    .nav_wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+    }
+    .items{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .row1{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-caption{
+        width: 100%;
+    }
+    .caption h1{
+        margin: 0
+        ;
+        width: 100%;
+        padding: auto;
+        font-size:30%;
+        font-family:"Inter";
+    }
+    .image{
+        width: 93%;
+        margin: auto;
+        padding: auto;
+    }
+}
+@media screen and (max-width:480px) {
+
+    .aboutcontainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutpic{
+        margin: auto;
+        width: 93%;
+        overflow: hidden;
+    }
 
 }
-.caption{
+.container-caption{
+    background-color: black;
+}
+.row1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.caption h1{
     padding: 30px;
     color: white;
     font-size: 100px;
@@ -47,59 +139,23 @@
 .arrow{
     width: 30px;
     height: 20px;
+    padding-bottom: 10px;
 }
 .aboutcontainer{
     background-color: white;
+    display: flex;
+    margin: 1rem;
+    justify-content: space-evenly;
 }
 .aboutpic{
-    margin-top: 100px;
-    margin-left: 50px;
-    height: 726px;
-    width: 572px;
-    left: 89px;
-    top: 1353px;
-    border-radius: 0px;
-
+    padding: 1rem;
 }
-
-
-.aboutpara, h3{
-margin-top: 100px;
-margin-left: 20px;
-padding-left: 50px;
-width: 912px;
-height: 225px;
-left: 747px;
-margin-bottom: 0;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 80px;
-
-color: #000000;
-
-
+.aboutpara{
+    padding: 1rem;
+    font-size: larger;
 }
-.aboutpara, p{
-margin-left: 20px;
-padding-left: 50px;
-margin-bottom: 20px;
-width: 912px;
-height: 546px;
-left: 747px;
-margin-top: 10px;
-
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 300;
-font-size: 24px;
-line-height: 29px;
-
-color: #000000;
     
-}
+
 .scrolling-wrapper {
     display: flex;
     flex-wrap: nowrap;
@@ -112,9 +168,9 @@ color: #000000;
 .card{
     margin: 10px;
     padding: 10px;
-    width: 300px;
-    height: 300px;
-    top: 0%;
+    min-width: 300px;
+    min-height: 300px;
+    
 }
 .card:hover{
     background-color: black;
